@@ -1,0 +1,46 @@
+h1 {
+  text-align: center;
+}
+
+body {
+  text-align: center;
+}
+
+a {
+  text-decoration: underline;
+  color: black;
+}
+
+#navbar li {
+  display: inline;
+  padding: 8%;
+}
+#navbar li a {
+  text-decoration: none;
+}
+
+#navbar {
+  text-decoration: none;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+
+#welcome-container {
+   position: absolute;               /* 2 */
+   top: 50%;                         /* 3 */
+   transform: translate(-50%, -50%);
+   left: 50%;
+   margin-right: -50%;
+
+ }   /* 4 */
+
+
+
+/* Each state */
+
+a:visited { text-decoration: none; color:black; }
+a:hover { text-decoration: none; color:black; }
+a:focus { text-decoration: none; color:black; }
+a:hover, a:active { text-decoration: none; color:black }
