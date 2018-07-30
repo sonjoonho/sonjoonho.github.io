@@ -1,27 +1,35 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8">
-    <meta name="keywords" content="Joon-Ho, Son, website, computing">
-    <title>Joon-Ho Son</title>
-    <!-- Computer Modern Serif -->
-    <link rel="stylesheet" type="text/css" href="/res/fonts/Serif/cmun-serif.css">
-    <link rel="stylesheet" type="text/css" href="index.css">
-  </head>
-  <h1>joon.</h1>
-  <body>
-      <ul id="navbar">
-        <li><a href="https://www.linkedin.com/in/joon-ho-son-56069b14a/">LinkedIn</a></li>
-        <li><a href="cv.pdf">Curriculum vitae</a></li>
-        <li><a href="https://github.com/sonjoonho">GitHub</a></li>
-      </ul>
+---
+layout: default
+---
+<div id="home">
 
-      <hr width="60%">
+  <div class="blogs column">
+    <h1 class="column-heading"> Blog Posts </h1>
+    <ul class="posts">
+      {% for post in site.posts %}
+      {% unless post.categories contains "Projects" %}
+        <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+    </ul>
+      {% endunless %}
+      {% endfor %}
+  </div>
 
-      <div id="welcome-container">
-        <p>
-          hi.
-        </p>
-      </div>
-  </body>
-</html>
+  <div class="projects column">
+    <h1 class="column-heading"> Projects </h1>
+    <ul class="posts">
+      {% for post in site.categories.Projects %}
+        <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+    </ul>
+      {% endfor %}
+  </div>
+
+  <div class="links column">
+    <h1 class="column-heading"> Links </h1>
+    <ul class="posts">
+      <li>Curriculum vitae</li>
+      <li>Github</li>
+      <li>LinkedIn</li>
+    </ul>
+  </div>
+
+</div>
