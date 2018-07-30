@@ -10,9 +10,9 @@ title: Joon-Ho Son
       {% for post in site.posts %}
       {% unless post.categories contains "Projects" %}
         <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
-    </ul>
       {% endunless %}
       {% endfor %}
+    </ul>
   </div>
 
   <div class="projects column">
@@ -20,16 +20,16 @@ title: Joon-Ho Son
     <ul class="posts">
       {% for post in site.categories.Projects %}
         <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
-    </ul>
       {% endfor %}
+    </ul>
   </div>
 
   <div class="links column">
     <h1 class="column-heading"> Links </h1>
     <ul class="posts">
-      <li>Curriculum vitae</li>
-      <li>Github</li>
-      <li>LinkedIn</li>
+      <li><a href="2018-07-30-cv.pdf">Curriculum vitae</a></li>
+      <li><a href="https://github.com/sonjoonho">Github</a></li>
+      <li><a href="https://www.linkedin.com/in/joon-ho-son-56069b14a/">LinkedIn<</a></li>
     </ul>
   </div>
 

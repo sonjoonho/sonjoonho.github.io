@@ -4,6 +4,15 @@ h1 {
   font-size: 1em;
 }
 
+h2 {
+  font-size: 1em;
+  text-decoration: underline;
+}
+
+h3 {
+  font-size: 1em;
+}
+
 .posts {
   list-style-type: none;
   padding-left: 0;
