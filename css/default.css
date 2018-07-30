@@ -10,32 +10,14 @@ h1 {
 }
 
 header {
+  text-decoration: none;
+  color: black;
   text-align: center;
 }
 
 .post {
   width: 60%;
   margin: 0 auto;
-}
-
-.navbar-links {
-  text-decoration: underline;
-  color: black;
-}
-
-#navbar li {
-  display: inline;
-  padding: 8%;
-}
-#navbar li a {
-  text-decoration: none;
-}
-
-#navbar {
-  text-decoration: none;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
 }
 
 .column-heading {
@@ -67,7 +49,9 @@ header {
 
 /* Each state */
 
-a:visited { text-decoration: none; color:black; }
-a:hover { text-decoration: none; color:black; }
-a:focus { text-decoration: none; color:black; }
-a:hover, a:active { text-decoration: none; color:black }
+#heading > b > a { text-decoration: none; color:black; }
+#heading > b > a:visited { text-decoration: none; color:black; }
+#heading > b > a:hover { text-decoration: none; color:black; }
+#heading > b > a:focus { text-decoration: none; color:black; }
+#heading > b > a:hover, a:active { text-decoration: none; color:black }
+
