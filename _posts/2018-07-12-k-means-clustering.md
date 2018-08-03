@@ -31,7 +31,7 @@ We repeat this for $$N$$ iterations, and in this way the algorithm discovers “
 ## Implementation
 The pseudocode for k-means goes as follows:
 
-```
+{% highlight python %}
 Input: The centroids K, 
        The number of iterations N, 
        Training set {x_1, x_2 ... x_m}
@@ -44,13 +44,13 @@ Repeat:
 
     for i = 1 to i = K:
         centroids[i] = mean of points assigned to cluster i
-```
+{% endhighlight %}
 
 We’re going to (very) minimally implement this algorithm with pure Python 3.6. We will also limit ourselves to 2 dimensions to make our code simpler. In reality, this algorithm can be applied to any number of dimensions.
 
 First, let’s define how we will represent a single point in space. We can do this using a named tuple. This is a lot like a normal tuple, but the fields are named.
 
-```
+{% highlight python %}
 from collections import namedtuple
 
 Point = namedtuple("Point", "x y")
@@ -60,11 +60,11 @@ p1 = Point(3, 2)
 print(p1.x)
 
 >> 3
-```
+{% endhighlight %}
 
 Now, from the pseudocode we can write some skeleton code.
 
-```
+{% highlight python %}
 from collections import namedtuple
 import matplotlib.pyplot as plt
 import random
@@ -111,26 +111,26 @@ def kmeans(K, N, points):
             centroid = mean_point(...)
 
     return clusters
-```
+{% endhighlight %}
 
 Let’s define a function that calculates squared distance. This is easy to implement.
 
-```
+{% highlight python %}
 def sqrdist(a, b):
     return (a.x - b.x)**2 + (a.y - b.y)**2
-```
+{% endhighlight %}
 
 Now we can use this function in a list comprehension to compute the distance to each centroid.
 
-```
+{% highlight python %}
 dist_to_centroids = [sqrdist(point, centroid) for centroid in centroids]
-```
+{% endhighlight %}
 
 To calculate the closest centroid we are going to use some neat properties of the min function.
 
-```
+{% highlight python %}
 closest_centroid, _ = min(enumerate(dist_to_centroids), key=lambda p: p[1])
-```
+{% endhighlight %}
 
 There’s a few different parts to this so let’s break it down.
 
@@ -138,18 +138,18 @@ The `min(key=…)` argument allows you to sort an iterable (in this case a list 
 
 So now we have completed our assignment step.
 
-```
+{% highlight python %}
 for i, point in enumerate(points):
     dist_to_centroids = [sqrdist(point, centroid) for centroid in centroids]
     closest_centroid, _ = min(enumerate(dist_to_centroids), key=lambda p: p[1])
     clusters[i] = closest_centroid
-```
+{% endhighlight %}
 
 For our update step, we need to implement two functions: `get_cluster` which returns the points in a particular cluster, and `mean_point` which calculate the mean of all the points in a cluster.
 
 Both functions can be implemented simply using a for loop.
 
-```
+{% highlight python %}
 def get_cluster(k, clusters, points):
     new_cluster = []
 
@@ -190,7 +190,7 @@ Point(x=4, y=20)]
 kmeans(4, 10, points)
 
 >> [0, 0, 0, 2, 2, 2, 1, 1, 1, 1, 3, 3, 3]
-```
+{% endhighlight %}
 
 These functions could probably be better implemented using functional programming or the like, but the one’s we’ve written are perfectly fine for our purposes.
 
