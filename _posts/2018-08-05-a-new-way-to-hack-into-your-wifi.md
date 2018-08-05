@@ -9,7 +9,7 @@ WPA stands for Wi-Fi Protected Access and is widely used security protocol devel
 
 The PMKID is calculated using [HMAC](https://en.wikipedia.org/wiki/HMAC) where the key is the PMK and the message to be authenticated is a concatenation of the label PMK name (a fixed-length string), the [MAC](https://en.wikipedia.org/wiki/MAC_address) address of the access point and the MAC address of the supplicant.
 
-{% highlight %}
+{% highlight python %}
 PMKID = HMAC-SHA1-128(PMK, "PMK Name" | MAC_AP | MAC_STA)
 {% endhighlight %}
 
