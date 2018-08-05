@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Smart Mirror
-catergories: Projects
+categories: Projects
 ---
 
 <https://github.com/sonjoonho/Smart-Mirror>
@@ -18,11 +18,9 @@ I chose to design and develop a *Smart Mirror* application which was an idea I h
 
 This project was as much about hardware and building things as it was about software development. The actual mirror itself consisted of an old computer monitor (which I picked up for cheap from a friend) which I dismantled and a double-sided mirror pane, which allowed light to pass through it. Hence, the interface could be seen as a futuristic glow on the surface of the mirror.
 
-[Picture of hardware blowout]
+<img src="/assets/2016-09-30-smart-mirror/blowout.png" width="50%"/>
 
-[Picture of actual mirror]
-
-
+<img src="/assets/2016-09-30-smart-mirror/smart-mirror.jpg" width="50%"/>
 
 ## Development
 
@@ -32,18 +30,22 @@ I didn't have any Android development experience, nor did I want to learn it in 
 
 Organisation is a key part of the Extended Project Qualification, so before even writing a line of code I drew up a Gantt chart in Excel detailing my timeline and kept a weekly development diary. I even did some research into development methodolgies and time-boxing.
 
-[Picture of Gantt chart]
+<img src="/assets/2016-09-30-smart-mirror/gantt-chart.png" width="50%"/>
 
 
 ## Features
 
-Translation
+- Voice control
+- Language translation
+- Greetings
+- Weather
+- News
 
 ## Documentation and Presentation
 
 The documentation was probably the most important part of the project, as this is where the emphasis was in the qualification mark scheme. It is quite a comprehensive work and was primarily aimed at readers which did not have a programming background. It goes into depth on all aspects of the project, including the intricacies of the interface design and timelines, and it certainly does not lack in pictures. It even includes an overview of what StackOverflow and git are and how they function.
 
-[Picture of flowchart and something else]
+<img src="/assets/2016-09-30-smart-mirror/Flowchart.png" width="50%"/>
 
 The presentation was the final part of the project. It was in a marketplace style, where individuals would set up stalls and present to students and examiners. I actually enjoyed this quite a lot; when you've put so much time into something, it becomes easy to talk about!
 
