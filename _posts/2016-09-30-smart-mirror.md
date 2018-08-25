@@ -2,6 +2,7 @@
 layout: post
 title: Smart Mirror
 categories: Projects
+redirect_from: "/smart-mirror"
 ---
 
 <https://github.com/sonjoonho/Smart-Mirror>
