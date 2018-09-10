@@ -2,7 +2,7 @@
 layout: post
 title: Poisonous Mushroom Classification
 categories: Projects
-redirect_from: "/poisonous-mushroom-classification"
+redirect_from: "/mushroom-classification"
 ---
 
 This is a study on the UCI Mushroom dataset. 
