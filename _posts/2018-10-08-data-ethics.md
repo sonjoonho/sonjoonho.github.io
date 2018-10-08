@@ -13,7 +13,7 @@ Then, we were invited to present our solution to a panel of distinguished judges
 If you're interested, I've embedded our Executive Summary below.
 
 <div style="height: 1000px;">
-<iframe src="/assets/2018-10-08-data-ethics/Data_Ethics_Case_Competition_Submission.pdf" style="width: 100%; height: 100%;" onload="resizeIframe(this)">
+<iframe src="/assets/2018-10-08-data-ethics/Data_Ethics_Case_Competition_Submission.pdf" style="width: 100%; height: 100%;" >
    <p>It appears your web browser doesn't support iframes.</p>
 </iframe>
 </div>
