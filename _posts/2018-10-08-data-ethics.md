@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Data Ethics Case Competition
-redirect-from: /data-ethics
+redirect-from: "/data-ethics"
 ---
 
 Today we returned from the Amsterdam Privacy Conference 2018 as winners of the Data Ethics Case Competition sponsored by Palantir!
