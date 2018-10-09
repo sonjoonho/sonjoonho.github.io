@@ -77,3 +77,8 @@ header {
 #heading > b > a:focus { text-decoration: none; color:black; }
 #heading > b > a:hover, a:active { text-decoration: none; color:black }
 
+@media only screen and (max-width: 767px) {
+  body {
+    font-size: 0.6em;
+  }
+}
