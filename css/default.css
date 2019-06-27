@@ -46,7 +46,7 @@ header {
 
 #home {
   margin: 0 auto;
-  width: 60%;
+  width: 80%;
 }
 
 .column {
@@ -79,6 +79,10 @@ header {
 
 @media only screen and (max-width: 767px) {
   body {
-    font-size: 0.6em;
+    font-size: 1em;
+  }
+
+  .column{
+    width: 100%;
   }
 }
