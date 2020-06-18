@@ -5,7 +5,7 @@ categories: Projects
 redirect_from: "/cells"
 ---
 
-<http://www.github.com/plug-in-baby/simple-colocalization>
+<http://www.github.com/sonjoonho/SimpleRGC>
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/BV-cw8e6WZo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
  
