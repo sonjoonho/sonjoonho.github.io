@@ -72,4 +72,4 @@ Really, what it boils down to is this: You have an infinite search space, you’
 
 No, quantum computers cannot solve the halting problem.
 
-[^1]: If you don't understand recursion, it goes a bit like [this](sonjoonho.github.io/2017/12/28/the-halting-problem.html).
+[^1]: If you don't understand recursion, it goes a bit like [this](https://sonjoonho.github.io/2017/12/28/the-halting-problem.html).
