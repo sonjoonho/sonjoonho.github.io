@@ -52,6 +52,7 @@ header {
 .column {
   float: left;
   width: 33.33%;
+  padding: 0.3em;
 }
 
  .row:after {
@@ -85,4 +86,12 @@ header {
   .column{
     width: 100%;
   }
+}
+
+/* This snippet stops padding from affecting column width. */
+
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+     box-sizing: border-box;
 }
