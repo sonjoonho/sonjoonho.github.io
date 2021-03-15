@@ -7,7 +7,9 @@ redirect_from: "/cells"
 
 <http://www.github.com/sonjoonho/SimpleRGC>
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/BV-cw8e6WZo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<div class="youtube-embed">
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/BV-cw8e6WZo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
  
 <div style="height: 1000px;">
 <iframe src="/assets/2019-10-19-automated-image-analysis/report.pdf" style="width: 100%; height: 100%;" >
