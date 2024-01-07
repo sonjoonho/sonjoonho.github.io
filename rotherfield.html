@@ -7,19 +7,26 @@ redirect:
 <html lang="en-US">
   {% include google_analytics.html %}
   <meta charset="utf-8" />
-  <title>Redirecting&hellip;</title>
+  <title>Redirecting to Rotherfield Primary School&hellip;</title>
+  <link rel="canonical" href="{{ page.redirect.to }}" />
   <script>
-    console.log("hi2");
-    var redirect = function () {
+    console.log("Running scripts...");
+    var redirectAndTrack = function () {
       gtag("event", "redirect", {
         destination: "{{ page.redirect }}",
         event_callback: function () {
-          console.log("hi");
+          console.log("Event callback");
           document.location = "{{ page.redirect }}";
         },
       });
     };
-    redirect();
+    redirectAndTrack();
+
+    var redirect = function () {
+      document.location = "{{page.redirect}}";
+    };
+
+    setTimeout(redirect, 1000);
   </script>
   <meta name="robots" content="noindex" />
   <h1>Redirecting&hellip;</h1>
