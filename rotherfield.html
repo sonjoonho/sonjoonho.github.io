@@ -1,5 +1,29 @@
 ---
-permalink: /rotherfield
-redirect_to:
-  - https://www.rotherfieldprimaryschool.co.uk/ 
+redirect:
+  - https://www.rotherfieldprimaryschool.co.uk/
 ---
+
+<!DOCTYPE html>
+<html lang="en-US">
+  {% include google_analytics.html %}
+  <meta charset="utf-8" />
+  <title>Redirecting&hellip;</title>
+  <script>
+    console.log("hi2");
+    var redirect = function () {
+      gtag("event", "redirect", {
+        destination: "{{ page.redirect }}",
+        event_callback: function () {
+          console.log("hi");
+          document.location = "{{ page.redirect }}";
+        },
+      });
+    };
+    redirect();
+  </script>
+  <meta name="robots" content="noindex" />
+  <h1>Redirecting&hellip;</h1>
+  <a href="{{ page.redirect }}" onclick="redirect(); return false;"
+    >Click here if you are not redirected.</a
+  >
+</html>
